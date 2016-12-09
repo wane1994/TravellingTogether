@@ -1,0 +1,110 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentUser">
+
+    <RelativeLayout
+        android:id="@+id/userInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tvHintUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:text="@string/usernamehint"/>
+
+        <TextView
+            android:id="@+id/tvUserUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tvHintUsername"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:hint="@string/username"/>
+
+        <TextView
+            android:id="@+id/tvHintName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHintUsername"
+            android:textSize="25sp"
+            android:text="@string/namehint"/>
+
+        <TextView
+            android:id="@+id/tvUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHintUsername"
+            android:layout_toEndOf="@id/tvHintName"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:hint="@string/name"/>
+
+        <TextView
+            android:id="@+id/tvHintPhonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHintName"
+            android:textSize="25sp"
+            android:text="@string/phonehint"/>
+
+        <TextView
+            android:id="@+id/tvUserPhonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHintName"
+            android:layout_toEndOf="@id/tvHintPhonenumber"
+            android:layout_marginLeft="5dp"
+            android:textSize="25sp"
+            android:hint="@string/phone"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineseparatorInfo"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/userInfo"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/black"/>
+
+    <Button
+        android:id="@+id/driver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/lineseparatorInfo"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/i_am_a_driver" />
+
+    <Button
+        android:id="@+id/passenger"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/driver"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/i_am_a_passenger"/>
+
+    <ImageView
+        android:id="@+id/imgLogoUser"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,94 @@
+<resources>
+    <string name="app_name">Travelling Together</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="TravellingTogether">Travelling Together</string>
+    <string name="ttFind">find a fellow-traveller for trip</string>
+    <string name="updInfo">Update your info</string>
+    <string name="appInfo">Application info</string>
+    <string name="driver">Driver</string>
+    <string name="driverTrips">Trips created by drivers</string>
+    <string name="forthcomingTrip">Forthcoming trip</string>
+    <string name="passenger">Passenger</string>
+    <string name="passengerTrips">Passenger requested trips</string>
+    <string name="requestedTrip">Requested trip</string>
+    <string name="tripStatusDriver">Driver: </string>
+    <string name="createTripDriver">Driver: Create a trip</string>
+    <string name="tripStatusPassenger">Passenger: </string>
+    <string name="createTripPassenger">Passenger: Request a trip</string>
+
+    <string name="noInternet">Your internet connection is turned off</string>
+    <string name="badInternet">Check your internet connection</string>
+
+    <string name="logFirst">Log in first</string>
+    <string name="notLogged">You are not logged in</string>
+    <string name="logOut">Logged out successfully</string>
+    <string name="usernameChange">Username can not be changed</string>
+
+    <string name="fillFields">Fill all the fields</string>
+    <string name="fillOneField">Fill at least one field</string>
+    <string name="fillDateTime">Fill \"Date\" and \"Time\" fields</string>
+    <string name="fillFromTo">Fill \"From\" and \"To\" fields</string>
+    <string name="emptyComment">Write your comment first</string>
+
+    <string name="noTrips">No trips this way</string>
+    <string name="noPlace">Can not find a place, try again</string>
+
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="log_in">Log in</string>
+    <string name="first_name">First name</string>
+    <string name="family_name">Family name</string>
+    <string name="phone_number">Phone number</string>
+    <string name="update_info">Update info</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="old_password">Old password</string>
+    <string name="new_password">New password</string>
+    <string name="update">Update</string>
+    <string name="usernamehint">Username: </string>
+    <string name="namehint">Name: </string>
+    <string name="name">Name</string>
+    <string name="phonehint">Phone: </string>
+    <string name="phone">Phone</string>
+    <string name="i_am_a_driver">I am a Driver</string>
+    <string name="i_am_a_passenger">I am a Passenger</string>
+    <string name="create_a_trip">Create a trip</string>
+    <string name="list_of_requested_trips">List of requested trips</string>
+    <string name="list_of_existed_trips">List of existed trips</string>
+    <string name="create">Create</string>
+    <string name="set_time">Set time</string>
+    <string name="set_date">Set date</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="filter_trips">Filter trips</string>
+    <string name="rovaniemi">Rovaniemi</string>
+    <string name="fromDetail">From:</string>
+    <string name="toDetail">To:</string>
+    <string name="murmansk">Murmansk</string>
+    <string name="date">Date:</string>
+    <string name="_24_12_2018_23_00">24.12.2018, 23:00</string>
+    <string name="driverDetail">Driver:</string>
+    <string name="ivan_shabunin_wane">Ivan Shabunin (Wane)</string>
+    <string name="phoneDetail">Phone:</string>
+    <string name="_358465700836">+358465700836</string>
+    <string name="add_a_comment">add a comment</string>
+    <string name="comment">Comment</string>
+    <string name="infodescription">Create an account and start. If You are a driver, create a new trip or find already requested one. If You dont have an own car, create a request and find a driver for the same way.</string>
+    <string name="infoHeader">Travelling Together is an application for searching fellow-travellers to organise a joint trip.</string>
+    <string name="infowhere">Created for the Thesis Project at Lapland University of Applied Sciences.</string>
+    <string name="infovalerii">By Valerii Kan (valerii.kan@edu.lapinamk.fi) and</string>
+    <string name="infoivan">Ivan Shabunin (ivan.shabunin@edu.lapinamk.fi)</string>
+    <string name="infowhen">April 2016</string>
+    <string name="driver_menu">Driver menu</string>
+    <string name="passenger_menu">Passenger menu</string>
+    <string name="app_information">App information</string>
+
+
+</resources>

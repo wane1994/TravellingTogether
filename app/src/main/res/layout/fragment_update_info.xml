@@ -1,0 +1,86 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentUpdateInfo">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp">
+
+        <EditText
+            android:id="@+id/etUpdUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etUpdOldPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdUsername"
+            android:inputType="textPassword"
+            android:hint="@string/old_password"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etUpdNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdOldPassword"
+            android:inputType="textPassword"
+            android:hint="@string/new_password"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etUpdName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdNewPassword"
+            android:hint="@string/first_name"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etUpdSurname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdName"
+            android:hint="@string/family_name"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/etUpdPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdSurname"
+            android:hint="@string/phone_number"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/etUpdPhone"
+            android:background="@drawable/button"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/update" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgLogoUpd"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:scaleX="-1"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

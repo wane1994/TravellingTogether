@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.FragmentMap">
+
+    <fragment
+        android:id="@+id/mapView"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <ru.travellingtogether.travellingtogether.views.PlacesAutoCompleteTextView
+                android:id="@+id/atvFrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                android:hint="@string/from" />
+
+            <ru.travellingtogether.travellingtogether.views.PlacesAutoCompleteTextView
+                android:id="@+id/atvTo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/atvFrom"
+                android:ems="11"
+                android:hint="@string/to" />
+
+            <EditText
+                android:id="@+id/etDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/atvTo"
+                android:ems="6"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/set_date"/>
+
+            <EditText
+                android:id="@+id/etTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/atvTo"
+                android:layout_alignRight="@+id/atvTo"
+                android:ems="5"
+                android:clickable="false"
+                android:cursorVisible="false"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="@string/set_time"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create"
+            android:background="@drawable/button"
+            android:id="@+id/btnCreateTrip"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>

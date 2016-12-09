@@ -1,0 +1,28 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentTripList">
+
+
+    <ListView
+        android:id="@+id/listviewTrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_above="@+id/filterTrips">
+    </ListView>
+
+    <Button
+        android:id="@+id/filterTrips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/filter_trips"/>
+
+</RelativeLayout>

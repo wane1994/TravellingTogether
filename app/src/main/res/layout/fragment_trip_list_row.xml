@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true">
+
+
+        <TextView
+            android:id="@+id/rowFrom"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Rovaniemi"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/rowCenter"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="—"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"/>
+        <TextView
+            android:id="@+id/rowTo"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Rovaniemi"
+            android:gravity="center"
+            android:textAppearance="?android:textAppearanceLarge"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rowFrom"
+            android:layout_centerHorizontal="true">
+
+            <TextView
+                android:id="@+id/rowHour"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/rowMinute"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="00"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+            <TextView
+                android:id="@+id/rowDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="22"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/rowMonth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="."
+                android:textAppearance="?android:textAppearanceMedium"/>
+            <TextView
+                android:id="@+id/rowYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2012"
+                android:textAppearance="?android:textAppearanceMedium"/>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_driver"
+            android:icon="@drawable/ic_menu_driver"
+            android:title="@string/driver_menu" />
+        <item
+            android:id="@+id/nav_passenger"
+            android:icon="@drawable/ic_menu_passenger"
+            android:title="@string/passenger_menu" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_info"
+                android:icon="@drawable/ic_menu_info"
+                android:title="@string/app_information" />
+        </menu>
+    </item>
+
+</menu>

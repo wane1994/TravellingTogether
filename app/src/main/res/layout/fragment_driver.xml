@@ -1,0 +1,37 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentDriver">
+
+    <ImageView
+        android:id="@+id/imgDriver"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnDriverCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/imgDriver"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/create_a_trip" />
+
+    <Button
+        android:id="@+id/btnPassengerList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_below="@id/btnDriverCreate"
+        android:layout_marginLeft="65dp"
+        android:layout_marginRight="65dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/list_of_requested_trips"/>
+
+</RelativeLayout>

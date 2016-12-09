@@ -1,0 +1,157 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentTripDetails">
+
+    <RelativeLayout
+        android:id="@+id/tripInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/detailsFromHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/fromDetail"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsFrom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/detailsFromHint"
+            android:layout_marginLeft="5dp"
+            android:text="@string/rovaniemi"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsToHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsFromHint"
+            android:text="@string/toDetail"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsTo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsFrom"
+            android:layout_toEndOf="@id/detailsFromHint"
+            android:layout_marginLeft="5dp"
+            android:text="@string/murmansk"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsDateHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsToHint"
+            android:text="@string/date"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsTo"
+            android:layout_toEndOf="@id/detailsFromHint"
+            android:layout_marginLeft="5dp"
+            android:text="@string/_24_12_2018_23_00"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsDateHint"
+            android:text="@string/driverDetail"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsDate"
+            android:layout_toEndOf="@id/detailsStatus"
+            android:layout_marginLeft="5dp"
+            android:text="@string/ivan_shabunin_wane"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsPhoneHint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsStatus"
+            android:text="@string/phoneDetail"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/detailsPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detailsName"
+            android:layout_toEndOf="@id/detailsPhoneHint"
+            android:layout_marginLeft="5dp"
+            android:text="@string/_358465700836"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/lineseparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tripInfo"
+        android:background="@android:color/black"/>
+
+    <ListView
+        android:id="@+id/listviewComments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:listSelector="@android:color/transparent"
+        android:cacheColorHint="@android:color/transparent"
+        android:layout_below="@+id/lineseparator"
+        android:layout_above="@+id/etAddComment">
+    </ListView>
+
+    <EditText
+        android:id="@+id/etAddComment"
+        android:layout_width="match_parent"
+        android:layout_height="50sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="5dp"
+        android:hint="@string/add_a_comment"
+        android:layout_toStartOf="@+id/btnAddComment" />
+
+    <Button
+        android:id="@+id/btnAddComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/comment"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

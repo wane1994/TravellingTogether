@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginTop="30dp"
+    tools:context="ru.travellingtogether.travellingtogether.fragments.FragmentInfo">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/finfoHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/infoHeader"/>
+
+    <TextView
+        android:id="@+id/finfoText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/finfoHeader"
+        android:text="@string/infodescription"/>
+
+    <TextView
+        android:id="@+id/finfoWhere"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/finfoText"
+        android:text="@string/infowhere"/>
+
+    <TextView
+        android:id="@+id/finfoValerii"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/finfoWhere"
+        android:text="@string/infovalerii"/>
+
+    <TextView
+        android:id="@+id/finfoIvan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finfoValerii"
+        android:text="@string/infoivan"/>
+
+    <TextView
+        android:id="@+id/finfoWhen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/finfoIvan"
+        android:layout_marginTop="10dp"
+        android:text="@string/infowhen"/>
+
+    <ImageView
+        android:id="@+id/imgLogoInfo"
+        android:layout_width="240dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>
