@@ -6,3 +6,5 @@ Create an account and start. If You are a driver, create a new trip or find alre
 Implemented for the thesis project at Lapland University of Applied Sciences in April 2016 by: 
 #### * Ivan Shabunin (ivan.shabunin@aalto.fi)
 #### * Valerii Kan (valerkan@gmail.ru)
+
+![alt text](TravellingTogether/app/image/diagram.png)
