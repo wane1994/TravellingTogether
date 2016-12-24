@@ -7,4 +7,4 @@ Implemented for the thesis project at Lapland University of Applied Sciences in 
 #### * Ivan Shabunin (ivan.shabunin@aalto.fi)
 #### * Valerii Kan (valerkan@gmail.ru)
 
-![alt text](TravellingTogether/app/image/diagram.png)
+![alt text](app/image/diagram.png)
