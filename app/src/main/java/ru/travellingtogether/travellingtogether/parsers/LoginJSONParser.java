@@ -27,7 +27,7 @@ public class LoginJSONParser extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String getdata_url = "http://192.168.137.1/getuserdata.php";
+        String getdata_url = "https://travelling-together.000webhostapp.com/php/getuserdata.php";
 
         try {
             String username = params[0];

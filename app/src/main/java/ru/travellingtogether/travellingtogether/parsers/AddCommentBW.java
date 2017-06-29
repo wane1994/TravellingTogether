@@ -33,7 +33,7 @@ public class AddCommentBW extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String addcomment_url = "http://travellingtogether.ru/addcomment.php";
+        String addcomment_url = "https://travelling-together.000webhostapp.com/php/addcomment.php";
 
         try {
             String tripid = params[0];
@@ -89,7 +89,7 @@ public class AddCommentBW extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         loading.dismiss();
         Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        if (result.equals(" Comment added ")) {
+        if (result.equals("Comment added")) {
             source.addcommentBWPE();
         }
     }

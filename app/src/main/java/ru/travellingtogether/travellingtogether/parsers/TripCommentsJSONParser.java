@@ -28,7 +28,7 @@ public class TripCommentsJSONParser extends AsyncTask<String,Void,String>{
 
     @Override
     protected String doInBackground(String... params) {
-        String getcomments_url = "http://travellingtogether.ru/getcomments.php";
+        String getcomments_url = "https://travelling-together.000webhostapp.com/php/getcomments.php";
 
         try {
             String tripid = params[0];

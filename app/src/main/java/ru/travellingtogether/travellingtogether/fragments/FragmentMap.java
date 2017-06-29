@@ -564,7 +564,7 @@ public class FragmentMap extends android.app.Fragment implements OnMapReadyCallb
         public void onDateSet(DatePicker view, int selectedYear, int selectedMonth, int selectedDay) {
 
             tripYear = String.valueOf(selectedYear);
-            if (selectedMonth < 10) {
+            if (selectedMonth < 9) {
                 tripMonth = 0 + String.valueOf(selectedMonth + 1);
             } else {
                 tripMonth = String.valueOf(selectedMonth + 1);

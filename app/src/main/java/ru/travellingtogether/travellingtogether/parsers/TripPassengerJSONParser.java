@@ -32,7 +32,7 @@ public class TripPassengerJSONParser extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String gettriplist_url = "http://travellingtogether.ru/gettriplist.php";
+        String gettriplist_url = "https://travelling-together.000webhostapp.com/php/gettriplist.php";
 
         try {
             String userstatus = params[0];

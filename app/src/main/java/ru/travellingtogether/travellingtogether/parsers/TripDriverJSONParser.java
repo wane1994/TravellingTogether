@@ -3,6 +3,7 @@ package ru.travellingtogether.travellingtogether.parsers;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -32,7 +33,7 @@ public class TripDriverJSONParser extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String gettriplist_url = "http://travellingtogether.ru/gettriplist.php";
+        String gettriplist_url = "https://travelling-together.000webhostapp.com/php/gettriplist.php";
 
         try {
             String userstatus = params[0];
@@ -59,6 +60,7 @@ public class TripDriverJSONParser extends AsyncTask<String,Void,String> {
             jsonResult = bufferedReader.readLine();
             bufferedReader.close();
             inputStream.close();
+            Log.wtf("LOGG", jsonResult);
 
             httpURLConnection.disconnect();
             return jsonResult;

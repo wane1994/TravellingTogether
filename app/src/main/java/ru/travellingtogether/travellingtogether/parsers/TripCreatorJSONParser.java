@@ -27,7 +27,7 @@ public class TripCreatorJSONParser extends AsyncTask<String,Void,String>{
 
     @Override
     protected String doInBackground(String... params) {
-        String getcreatordata_url = "http://travellingtogether.ru/getcreatordata.php";
+        String getcreatordata_url = "https://travelling-together.000webhostapp.com/php/getcreatordata.php";
         try {
             String username = params[0];
             URL url = new URL(getcreatordata_url);

@@ -33,7 +33,7 @@ public class UpdateBW extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String updateinfo_url = "http://travellingtogether.ru/updateuserdata.php";
+        String updateinfo_url = "https://travelling-together.000webhostapp.com/php/updateuserdata.php";
 
         try {
             String username = params[0];
@@ -95,7 +95,7 @@ public class UpdateBW extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         loading.dismiss();
         Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        if (result.equals(" Your data updated")) {
+        if (result.equals("Your data updated")) {
             source.updateBWPE();
         }
     }

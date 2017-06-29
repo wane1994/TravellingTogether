@@ -33,7 +33,7 @@ public class TripCreateBW extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String createTrip_url = "http://travellingtogether.ru/createtrip.php";
+        String createTrip_url = "https://travelling-together.000webhostapp.com/php/createtrip.php";
 
         try {
             String userstatus = params[0];
@@ -101,7 +101,7 @@ public class TripCreateBW extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         loading.dismiss();
         Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        if (result.equals(" Your trip created successfully ")) {
+        if (result.equals("Your trip created successfully")) {
             source.tripcreateBWPE();
         }
     }

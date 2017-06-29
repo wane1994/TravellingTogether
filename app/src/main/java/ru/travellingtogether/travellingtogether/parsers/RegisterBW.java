@@ -33,7 +33,7 @@ public class RegisterBW extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String register_url = "http://192.168.137.1/register.php";
+        String register_url = "https://travelling-together.000webhostapp.com/php/register.php";
 
         try {
             String username = params[0];
@@ -93,7 +93,7 @@ public class RegisterBW extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         loading.dismiss();
         Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        if (result.equals(" Registration successful ")) {
+        if (result.equals("Registration successful")) {
             source.registerBWPE();
         }
     }

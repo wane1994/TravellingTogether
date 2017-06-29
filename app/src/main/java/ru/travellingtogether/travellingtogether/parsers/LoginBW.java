@@ -3,6 +3,7 @@ package ru.travellingtogether.travellingtogether.parsers;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.os.AsyncTask;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -33,7 +34,7 @@ public class LoginBW extends AsyncTask<String,Void,String> {
 
     @Override
     protected String doInBackground(String... params) {
-        String login_url = "http://192.168.137.1/login.php";
+        String login_url = "https://travelling-together.000webhostapp.com/php/login.php";
 
         try {
             String username = params[0];
@@ -87,7 +88,7 @@ public class LoginBW extends AsyncTask<String,Void,String> {
     protected void onPostExecute(String result) {
         loading.dismiss();
         Toast.makeText(context, result, Toast.LENGTH_SHORT).show();
-        if (result.equals(" Login success ")) {
+        if (result.equals("Login success")) {
         source.loginBWPE();
         }
     }
