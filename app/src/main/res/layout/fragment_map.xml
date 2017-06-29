@@ -30,6 +30,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:ems="11"
+                android:inputType="text"
                 android:hint="@string/from" />
 
             <ru.travellingtogether.travellingtogether.views.PlacesAutoCompleteTextView
@@ -38,6 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/atvFrom"
                 android:ems="11"
+                android:inputType="text"
                 android:hint="@string/to" />
 
             <EditText

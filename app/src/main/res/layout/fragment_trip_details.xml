@@ -140,6 +140,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginLeft="5dp"
         android:layout_marginBottom="5dp"
+        android:inputType="text"
         android:hint="@string/add_a_comment"
         android:layout_toStartOf="@+id/btnAddComment" />
 

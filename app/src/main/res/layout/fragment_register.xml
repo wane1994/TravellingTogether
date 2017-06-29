@@ -16,6 +16,7 @@
             android:id="@+id/etRegUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="text"
             android:hint="@string/username"
             android:textAlignment="center" />
 
@@ -33,6 +34,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/etRegPassword"
+            android:inputType="text"
             android:hint="@string/first_name"
             android:textAlignment="center" />
 
@@ -41,6 +43,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/etRegName"
+            android:inputType="text"
             android:hint="@string/family_name"
             android:textAlignment="center" />
 
@@ -49,6 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/etRegSurname"
+            android:inputType="phone"
             android:hint="@string/phone_number"
             android:textAlignment="center" />
 
